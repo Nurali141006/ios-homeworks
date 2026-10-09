@@ -4,8 +4,6 @@ void checkBalance({
 }) =>
     print("$name, your current available balance is: \$${balance.toStringAsFixed(2)}");
 
-
-// 2
 double deposit({
   required double currentBalance,
   double? amount,
@@ -25,8 +23,6 @@ double deposit({
 
   return updatedBalance;
 }
-
-// 3
 double withdraw({
   required String name,
   required double currentBalance,
