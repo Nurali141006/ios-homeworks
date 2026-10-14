@@ -95,22 +95,7 @@ class _ProfileCardScreenState extends State<ProfileCardScreen> {
                     ],
                   ),
 
-                  const SizedBox(height: 28),
 
-                  SizedBox(
-                    width: double.infinity,
-                    child: ElevatedButton.icon(
-                      onPressed: _toggleFollow,
-                      icon: Icon(
-                        _isFollowing
-                            ? Icons.check
-                            : Icons.person_add,
-                      ),
-                      label: Text(
-                        _isFollowing ? 'Following' : 'Follow',
-                      ),
-                    ),
-                  ),
 
                   const SizedBox(height: 12),
 
@@ -136,6 +121,26 @@ class _ProfileCardScreenState extends State<ProfileCardScreen> {
                           style: ElevatedButton.styleFrom(
                             backgroundColor: Colors.red,
                             foregroundColor: Colors.white,
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        child: OutlinedButton.icon(
+                          onPressed: _reset,
+                          icon: const Icon(Icons.refresh),
+                          label: const Text('Reset'),
+                        ),
+                      ),
+                      Expanded(
+                        child: ElevatedButton.icon(
+                          onPressed: _toggleFollow,
+                          icon: Icon(
+                            _isFollowing
+                                ? Icons.check
+                                : Icons.person_add,
+                          ),
+                          label: Text(
+                            _isFollowing ? 'Following' : 'Follow',
                           ),
                         ),
                       ),

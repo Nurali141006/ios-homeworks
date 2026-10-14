@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'lab5/home_screen.dart';
+import 'home_screen.dart';
 
 void main() {
   runApp(const SneakerStoreApp());
