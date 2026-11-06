@@ -20,7 +20,6 @@ class SmartCatalogApp extends StatelessWidget {
     );
   }
 }
-
 class Product {
   final String id;
   final String title;
